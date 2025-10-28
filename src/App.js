@@ -8,9 +8,9 @@ function App() {
   const [army, setArmy] = useState([]);
 
   useEffect(() => {
-    fetch("https://json-server-vercel-sooty-beta.vercel.app/bots")
+    fetch("http://localhost:3001/bots")
       .then((res) => res.json())
-      .then(setBots);
+      .then((data) => setBots(data));
   }, []);
 
   function enlistBot(bot) {
@@ -24,7 +24,7 @@ function App() {
   }
 
   function dischargeBot(bot) {
-    fetch(`https://json-server-vercel-sooty-beta.vercel.app/bots/${bot.id}`, {
+    fetch(`http://localhost:3001/bots${bot.id}`, {
       method: "DELETE",
     }).then(() => {
       setArmy(army.filter((b) => b.id !== bot.id));

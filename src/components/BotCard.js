@@ -1,7 +1,7 @@
 import React from "react";
 
 const BotCard = ({ bot, onClick, onDelete, showDelete }) => {
-  const { name, avatar_url, bot_class, catchphrase, health, damage, armor } = bot;
+  const { name, avatar_url, bot_class, health, damage, armor } = bot;
 
   return (
     <div
@@ -18,7 +18,6 @@ const BotCard = ({ bot, onClick, onDelete, showDelete }) => {
     >
       <img src={avatar_url} alt={name} width="100%" />
       <h3>{name}</h3>
-      <p><i>{catchphrase}</i></p>
       <p>Class: {bot_class}</p>
       <p>❤️ {health} | ⚔️ {damage} | 🛡️ {armor}</p>
       {showDelete && (

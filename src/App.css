@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.bot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bot-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  background: #f9f9f9;
+}
+
+.bot-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.bot-card button {
+  margin-top: 10px;
+  background-color: #ffdddd;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}

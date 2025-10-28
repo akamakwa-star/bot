@@ -34,7 +34,7 @@ const BotCard = ({ bot, onClick, onDelete, showDelete }) => {
             color: "white",
             border: "none",
             borderRadius: "50%",
-            width: 24,
+            width: 23,
             height: 24,
             cursor: "pointer",
           }}

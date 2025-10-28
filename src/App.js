@@ -25,7 +25,7 @@ function App() {
 
   function dischargeBot(bot) {
     fetch(`https://json-server-vercel-sooty-beta.vercel.app/bots${bot.id}`, {
-      method: "DELETE",
+      method: "DELETE",                                         
     }).then(() => {
       setArmy(army.filter((b) => b.id !== bot.id));
       setBots(bots.filter((b) => b.id !== bot.id));

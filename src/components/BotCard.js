@@ -19,7 +19,7 @@ const BotCard = ({ bot, onClick, onDelete, showDelete }) => {
       <img src={avatar_url} alt={name} width="100%" />
       <h3>{name}</h3>
       <p>Class: {bot_class}</p>
-      <p>❤️ {health} | ⚔️ {damage} | 🛡️ {armor}</p>
+      <p>❤️ {health} | ⚔️ {damage} |  {armor}</p>
       {showDelete && (
         <button
           onClick={(e) => {

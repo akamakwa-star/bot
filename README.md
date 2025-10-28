@@ -20,3 +20,36 @@ A simple React-based app for enlisting and managing your personal bot army. Buil
 
 ##  Project Structure
 
+bot-battlr/
+│
+├── db.json                    
+│
+├── package.json               
+├── README.md                   
+├── .gitignore                
+│
+├── public/                     
+│   ├── index.html
+│   ├── favicon.ico
+│   └── robots.txt
+│
+└── src/                        
+    │
+    ├── index.js                
+    ├── App.js                
+    ├── App.css                 
+    │
+    ├── components/             
+    │   ├── BotCard.js          
+    │   ├── BotCollection.js  
+    │   ├── YourBotArmy.js      
+    │   ├── BotSpecs.js         
+    │   └── SortBar.js         
+    │
+    ├── services/               
+    │   └── botService.js
+    │
+    └─styles/                 
+        ├── BotCard.css
+        ├── BotCollection.css
+        └─YourBotArmy.css
